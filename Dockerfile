@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 
 # Use a specific mirror for CentOS package installation
 RUN sed -i 's|^mirrorlist=|#mirrorlist=|g' /etc/yum.repos.d/CentOS-*.repo && \
